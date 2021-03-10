@@ -22,6 +22,7 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
 
 p {
   color: var(--text-color);
+  max-width: 40rem;
 }
 
 p span {
@@ -167,6 +168,7 @@ header nav ul li:hover a, header nav ul li.active a {
   position: relative;
   display: inline-block;
   z-index: 2;
+  margin-bottom: 5rem;
 }
 
 #work h2:before {
@@ -178,5 +180,29 @@ header nav ul li:hover a, header nav ul li.active a {
   height: 30px;
   background-color: #030304;
   z-index: -1;
+}
+
+#work .work {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 4rem;
+}
+
+#work .work .item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+#work .work .item h3 {
+  margin-bottom: 1rem;
+}
+
+#work .work .item .tags {
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
