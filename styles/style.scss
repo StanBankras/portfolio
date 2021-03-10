@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --header-text-color: #D4D4D4;
+  --text-color: #929292;
+  --accent-color: #FF8800;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--header-text-color);
+  span {
+    color: var(--accent-color);
+  }
+}
+
+p {
+  color: var(--text-color);
+  span {
+    color: var(--accent-color);
+  }
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  background-color: #100F17;
+  width: 100%;
+  nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    ul {
+      display: flex;
+      list-style: none;
+      li {
+        margin-right: 2rem;
+        a {
+          text-decoration: none;
+          color: var(--text-color);
+          font-weight: 600;
+        }
+        &:hover, &.active {
+          a {
+            color: var(--accent-color);
+          }
+        }
+      }
+    }
+  }
+}
+
+#about {
+  background-color: #100F17;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: calc(100vh - 57px);
+  }
+  .top {
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 4rem;
+      max-width: 350px;
+      padding: 3rem;
+      background-color: #0B0B10;
+    }
+    h1 {
+      margin-bottom: 1.5rem;
+    }
+    p {
+      max-width: 25rem;
+    }
+    .button {
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      background-color: var(--accent-color);
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 3rem;
+    }
+  }
+  .bottom {
+    p {
+      margin-bottom: 2rem;
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      li {
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        &.learning {
+          position: relative;
+          display: block;
+          &:after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            height: 7px;
+            width: 100%;
+            background-color: var(--accent-color);
+          }
+        }
+      }
+    }
+  }
+}
+
+#work {
+  background-color: #0A090D;
+  .container {
+    padding: 8rem 2rem;
+  }
+  h2 {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 10px;
+      width: 100%;
+      height: 30px;
+      background-color: #030304;
+      z-index: -1;
+    }
+  }
+}
