@@ -34,7 +34,7 @@ p {
 }
 
 header {
-  background-color: #100F17;
+  background-color: #181624;
   width: 100%;
   nav {
     max-width: 1400px;
@@ -61,7 +61,7 @@ header {
 }
 
 #about {
-  background-color: #100F17;
+  background-color: #181624;
   .container {
     display: flex;
     flex-direction: column;
@@ -76,7 +76,7 @@ header {
       max-width: 350px;
       width: 100%;
       padding: 3rem;
-      background-color: #0B0B10;
+      background-color: #13111b;
     }
     h1 {
       margin-bottom: 1.5rem;
@@ -126,7 +126,7 @@ header {
 }
 
 #work {
-  background-color: #0A090D;
+  background-color: #13121d;
   .container {
     padding: 8rem 2rem;
     padding-bottom: 15rem;
@@ -143,7 +143,7 @@ header {
       left: 10px;
       width: 100%;
       height: 30px;
-      background-color: #030304;
+      background-color: #0f0e16;
       z-index: -1;
     }
   }
@@ -170,7 +170,7 @@ header {
 }
 
 footer {
-  background-color: #050506;
+  background-color: #0f0e16;
   position: relative;
   min-height: 250px;
   text-align: center;
@@ -183,7 +183,7 @@ footer {
     transform: translate(-50%, -50%);
     padding: 2rem;
     border-radius: 30px;
-    background-color: #141317;
+    background-color: rgb(29, 27, 34);
     h2 {
       color: var(--accent-color);
     }

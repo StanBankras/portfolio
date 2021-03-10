@@ -37,7 +37,7 @@ p span {
 }
 
 header {
-  background-color: #100F17;
+  background-color: #181624;
   width: 100%;
 }
 
@@ -69,7 +69,7 @@ header nav ul li:hover a, header nav ul li.active a {
 }
 
 #about {
-  background-color: #100F17;
+  background-color: #181624;
 }
 
 #about .container {
@@ -99,7 +99,7 @@ header nav ul li:hover a, header nav ul li.active a {
   max-width: 350px;
   width: 100%;
   padding: 3rem;
-  background-color: #0B0B10;
+  background-color: #13111b;
 }
 
 #about .top h1 {
@@ -158,7 +158,7 @@ header nav ul li:hover a, header nav ul li.active a {
 }
 
 #work {
-  background-color: #0A090D;
+  background-color: #13121d;
 }
 
 #work .container {
@@ -180,7 +180,7 @@ header nav ul li:hover a, header nav ul li.active a {
   left: 10px;
   width: 100%;
   height: 30px;
-  background-color: #030304;
+  background-color: #0f0e16;
   z-index: -1;
 }
 
@@ -214,7 +214,7 @@ header nav ul li:hover a, header nav ul li.active a {
 }
 
 footer {
-  background-color: #050506;
+  background-color: #0f0e16;
   position: relative;
   min-height: 250px;
   text-align: center;
@@ -230,7 +230,7 @@ footer .popout {
           transform: translate(-50%, -50%);
   padding: 2rem;
   border-radius: 30px;
-  background-color: #141317;
+  background-color: #1d1b22;
 }
 
 footer .popout h2 {
