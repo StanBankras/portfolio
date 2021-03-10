@@ -74,6 +74,7 @@ header {
     img {
       margin-right: 4rem;
       max-width: 350px;
+      width: 100%;
       padding: 3rem;
       background-color: #0B0B10;
     }
@@ -149,7 +150,11 @@ header {
   .work {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 4rem;
+    gap: 5rem;
+    img {
+      width: 100%;
+      max-width: 500px;
+    }
     .item {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -171,8 +176,7 @@ footer {
   text-align: center;
   .popout {
     text-align: left;
-    width: 100%;
-    margin: 0 2rem;
+    width: 90%;
     max-width: 800px;
     position: absolute;
     left: 50%;
@@ -190,5 +194,28 @@ footer {
   p.copyright {
     padding-top: 8rem;
     max-width: unset;
+  }
+}
+
+@media(max-width: 767px) {
+  #about .top {
+    display: block;
+    margin-bottom: 3rem;
+    img {
+      margin-bottom: 2rem;
+    }
+  } 
+}
+
+@media(max-width: 1120px) {
+  #work {
+    .work {
+      .item {
+        grid-template-columns: 1fr;
+        img {
+          grid-row: 1;
+        }
+      }
+    }
   }
 }

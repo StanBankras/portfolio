@@ -97,6 +97,7 @@ header nav ul li:hover a, header nav ul li.active a {
 #about .top img {
   margin-right: 4rem;
   max-width: 350px;
+  width: 100%;
   padding: 3rem;
   background-color: #0B0B10;
 }
@@ -188,7 +189,12 @@ header nav ul li:hover a, header nav ul li.active a {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  gap: 4rem;
+  gap: 5rem;
+}
+
+#work .work img {
+  width: 100%;
+  max-width: 500px;
 }
 
 #work .work .item {
@@ -216,8 +222,7 @@ footer {
 
 footer .popout {
   text-align: left;
-  width: 100%;
-  margin: 0 2rem;
+  width: 90%;
   max-width: 800px;
   position: absolute;
   left: 50%;
@@ -239,5 +244,26 @@ footer .popout p {
 footer p.copyright {
   padding-top: 8rem;
   max-width: unset;
+}
+
+@media (max-width: 767px) {
+  #about .top {
+    display: block;
+    margin-bottom: 3rem;
+  }
+  #about .top img {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 1120px) {
+  #work .work .item {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #work .work .item img {
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
