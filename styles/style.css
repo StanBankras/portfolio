@@ -209,6 +209,10 @@ header nav ul li:hover a, header nav ul li.active a {
   margin-bottom: 1rem;
 }
 
+#work .work .item h3 a {
+  color: var(--text-color);
+}
+
 #work .work .item .tags {
   margin-bottom: 1rem;
 }

@@ -161,6 +161,9 @@ header {
       gap: 3rem;
       h3 {
         margin-bottom: 1rem;
+        a {
+          color: var(--text-color);
+        }
       }
       .tags {
         margin-bottom: 1rem;
